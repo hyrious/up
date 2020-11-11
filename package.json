@@ -1,0 +1,24 @@
+{
+  "name": "@hyrious/up",
+  "version": "0.1.0",
+  "description": "upgrade all packages to latest version",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.js --bundle --outfile=dist/index.js",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyrious/up.git"
+  },
+  "homepage": "https://github.com/hyrious/up",
+  "bin": {
+    "up": "./dist/index.js"
+  },
+  "author": "hyrious <hyrious@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.8.5",
+    "release-it": "^14.2.1"
+  }
+}
