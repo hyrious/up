@@ -7,8 +7,10 @@ This tool radically upgrade all your dependencies (in package.json) to latest ve
 ```bash
 # upgrade all packages in "dependencies"
 npx @hyrious/up
-# "dependencies" + "devDependencies"
+# upgrade all packages in "devDependencies"
 npx @hyrious/up -D
+# upgrade all packages in "dependencies" and "devDependencies"
+npx @hyrious/up +D
 ```
 
 Behind the scene:
@@ -32,6 +34,18 @@ yarn add vue@next
 ```bash
 pnpm remove vue
 pnpm add vue@next
+```
+
+#### Full command options list
+
+```bash
+up [-D|+D] [--npm|--yarn|--pnpm]
+           upgrade dependencies by default
+        -D upgrade devDependencies
+        +D upgrade dependencies and devDependencies
+     --npm force using npm, in case it can not figure out which pm you are using
+    --yarn force using yarn
+    --pnpm force using pnpm
 ```
 
 ### License
