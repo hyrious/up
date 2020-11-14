@@ -1,9 +1,10 @@
 {
   "name": "@hyrious/up",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "upgrade all packages to latest version",
   "main": "index.js",
   "scripts": {
+    "dev": "npm run build && node dist/index.js",
     "format": "prettier -w *.js",
     "build": "node build.js",
     "prerelease": "npm run build",
@@ -26,6 +27,10 @@
   },
   "dependencies": {
     "got": "^11.8.0",
-    "read-package-json": "^3.0.0"
+    "read-package-json": "^3.0.0",
+    "semver": "^7.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

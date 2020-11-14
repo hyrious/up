@@ -38,14 +38,15 @@ pnpm add vue@next
 
 #### Full command options list
 
-```bash
-up [-D|+D] [--npm|--yarn|--pnpm]
+```
+up [-D|+D] [--npm|--yarn|--pnpm] [--dry-run]
            upgrade dependencies by default
         -D upgrade devDependencies
         +D upgrade dependencies and devDependencies
      --npm force using npm, in case it can not figure out which pm you are using
     --yarn force using yarn
     --pnpm force using pnpm
+ --dry-run output what commands it will run, but don't actually run them
 ```
 
 ### License
